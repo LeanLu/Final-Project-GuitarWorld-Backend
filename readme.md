@@ -4,13 +4,22 @@
 
 ### **Description:**
 
-Backend of a guitar's e-commerce project developed with [Node.js](https://nodejs.org/es/) + [Express](https://expressjs.com/) and [MongoDB](https://www.mongodb.com/).
+Backend of a guitars e-commerce project.
+Users are required to register and log in to use the application.
+Once logged in, they can view all the guitars, filter them by categories, add or remove them from their shopping cart and view the guitar details on a specific page.
+There is an Admin role which can create, edit and delete the guitars.
 
-<div>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" title="NodeJS" alt="NodeJS" width="80" height="50"/>&nbsp;
-  <img src="https://cdn.cdnlogo.com/logos/e/23/express.svg" title="Express" alt="Express" width="80" height="60"/>&nbsp;
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" title="MongoDB" **alt="MongoDB" width="130" height="50"/>&nbsp;
-</div>
+The project was developed using [Node.js](https://nodejs.org/es/) with the [Express](https://expressjs.com/) framework and [Typescript](https://www.typescriptlang.org/).
+The database used was [MongoDB](https://www.mongodb.com/).
+Unit tests were performed using [Jest](https://jestjs.io/) and integration tests were conducted with [Supertest](https://github.com/ladjs/supertest).
+Additionally, [Postman](https://www.postman.com/) was used for functional testing as well.
+
+<p align="left">
+  <a href="https://developer.mozilla.org/en-US/">
+    <img src="https://skillicons.dev/icons?i=nodejs,express,ts,mongodb,jest,postman"/>
+  </a>
+</p>
+
 <br>
 <br>
 
@@ -23,9 +32,6 @@ Backend of a guitar's e-commerce project developed with [Node.js](https://nodejs
 - **.get(’/users/:idUser’)** → Load one user. Need to be logged in.
 - **.patch(’/users/add/cart/:idGuitar’)** → Add guitars to shopping cart. Need to be logged in.
 - **.patch(’/users/remove/cart/:idGuitar’)** → Remove guitars to shopping cart. Need to be logged in.
-- **.get(’/users/’)** → Load all users. Only for Admin.
-- **.patch(’/users/edit/:idUser’)** → Edit a user. Only for Admin.
-- **.delete(’/users/delete/:idUser’)** → Delete a user. Only for Admin.
 
 **‘/guitars’:**
 
@@ -65,8 +71,11 @@ Backend of a guitar's e-commerce project developed with [Node.js](https://nodejs
 ### **How to use it:**
 
 - Fork the project.
+- Clone it to work in local.
 - Install dependencies: `npm i`.
 - Follow the `sample.env` instructions in order to connect the server with your MongoDB account.
+- Leave a terminal compiling: `npm run build`.
+- Start the server in other terminal: `npm run start:mon`
 - Enjoy it.
   <br>
   🥳
