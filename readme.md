@@ -10,9 +10,9 @@ Once logged in, they can view all the guitars, filter them by categories, add or
 There is an Admin role which can create, edit and delete the guitars.
 
 The project was developed using [Node.js](https://nodejs.org/es/) with the [Express](https://expressjs.com/) framework and [Typescript](https://www.typescriptlang.org/).
-The database used was [MongoDB](https://www.mongodb.com/).
+The database used was [MongoDB](https://www.mongodb.com/) with [Mongoose](https://mongoosejs.com/) library.
 Unit tests were performed using [Jest](https://jestjs.io/) and integration tests were conducted with [Supertest](https://github.com/ladjs/supertest).
-Additionally, [Postman](https://www.postman.com/) was used for functional testing as well.
+Additionally, [Postman](https://www.postman.com/) was used for functional testing as well and [Render](https://render.com/) to deploy the backend.
 
 <p align="left">
   <a href="https://developer.mozilla.org/en-US/">
